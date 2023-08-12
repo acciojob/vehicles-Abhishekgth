@@ -1,13 +1,13 @@
 package com.driver;
 
 public class Car extends Vehicle {
-    private int wheels;
-    private String type;
-    private int doors;
-    private int gears;
-    private boolean isManual;
+    private final int wheels;
+    private final String type;
+    private final int doors;
+    private final int gears;
+    private final boolean isManual;
     private int currentGear;
-    private int seats;
+    private final int seats;
 
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
         //Hint: Car extends Vehicle
@@ -27,11 +27,11 @@ public class Car extends Vehicle {
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
     }
 
-    public int getWheels() {
+   public int getWheels() {
         return this.wheels;
     }
 
-    public String getType() {
+    public String  getType() {
         return this.type;
     }
 
